@@ -1,0 +1,113 @@
+/*
+* Merci beaucoup à http://una.im/sass-pixel-art/
+*/
+
+@import 'colors';
+
+$icon-size-var : 5px;
+
+@function pixelize($matrix, $size: $icon-size-var, $color: hotpink) {
+
+  $l: length($matrix); // Taille de la Matrice
+  $shadows: ''; // Liste des ombres
+  $i: $l; // Taille d'une ligne de la Matrice
+  
+  // Lecture de tous les éléments de la liste
+  @for $i from 1 through $l {
+    $row: nth($matrix, $i); // Une ligne de la liste
+
+    @for $j from 1 through length($row){
+
+        $item: nth($row, $j); // Un élément de la ligne
+
+        $shadows:  $shadows + ($j*$size) + ' ' + ($i*$size) + ' ';
+
+        @if $item == a {
+          $shadows:  $shadows + $a;
+        }
+        @if $item == b {
+          $shadows:  $shadows + $b;
+        }
+        @if $item == c {
+          $shadows:  $shadows + $c;
+        }
+        @if $item == d {
+          $shadows:  $shadows + $d;
+        }
+        @if $item == e {
+          $shadows:  $shadows + $e; 
+        }
+        @if $item == f {
+          $shadows:  $shadows + $f;
+        }
+        @if $item == g {
+          $shadows:  $shadows + $g;
+        }        
+        @if $item == k {
+          $shadows:  $shadows + $k; 
+        }
+        @if $item == m {
+          $shadows:  $shadows + $m;
+        }
+        
+        @if $item == n {
+          $shadows:  $shadows + $n;
+        }
+        @if $item == o {
+          $shadows:  $shadows + $o;
+        }
+        @if $item == p {
+          $shadows:  $shadows + $p;
+        }
+        @if $item == q {
+          $shadows:  $shadows + $q; 
+        }
+        @if $item == r {
+          $shadows:  $shadows + $r;
+        }
+        @if $item == t {
+          $shadows:  $shadows + $t;
+        }
+        @if $item == u {
+          $shadows:  $shadows + $u;
+        }
+        @if $item == v {
+          $shadows:  $shadows + $v;
+        }
+        @if $item == w{
+          $shadows:  $shadows + $w;
+        }
+        @if $item == x{
+          $shadows:  $shadows + $x;
+        }
+        @if $item == y {
+          $shadows:  $shadows + $y;
+        }
+        @if $item == z {
+          $shadows:  $shadows + $z;
+        }        
+        
+
+      // En arrivant à la fin de la ligne, ajout d'une virgule pour séparer les ombres
+      @if not ($j == length($row) and $i == $l) {
+        $shadows: $shadows + ',';
+      }
+    }
+  }
+
+  // Renvoi de la box-shadow
+  @return unquote($shadows);
+}
+
+@mixin sizefy($size) {
+  top: -$size;
+  left: -$size;
+  width: $size;
+  height: $size;
+}
+
+@mixin simple($item, $size: 10px) {
+  position: relative;
+  box-shadow: pixelize($item, $size);
+  @include sizefy($size);
+}

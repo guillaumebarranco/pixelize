@@ -1,0 +1,48 @@
+@import '../../pixelize';
+
+$thelegendof:
+  (b b b t b t b t b b t t t t b t t b b t b b b t b b t b b b t b b t t t t t b b b t b b b)
+  (t b t t b t b t b t t t t t b t t b t t b t t t b t t b t b t b t b t t t t b t b t b t t)
+  (t b t t b b b t b b t t t t b t t b b t b t b t b b t b t b t b t b t t t t b t b t b b b)
+  (t b t t b t b t b t t t t t b t t b t t b t b t b t t b t b t b t b t t t t b t b t b t t)
+  (t b t t b t b t b b t t t t b b t b b t b b b t b b t b t b t b b t t t t t b b b t b t t)
+;
+
+$zelda:
+  (t t b b b b b b b b b b b b b b t b t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t)
+  (t t b b b b b b b b b b b b b t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t)
+  (t b b t t t t t t t b b b b b b b b b b b b b b b b b b t b b b b b b t t t t t b b b b b t b t t t)
+  (t b t b t t t t t t b b b b t b b b b b b b b t b b b t b t b b b b b b b t b t t b b b b t b t t t)
+  (b t b t t t t t t b b b b t b t b b t t t b b t b b t b t t t b b b b b b b t b t b b b b t b t t t)
+  (t t t t t t t t t b b b b t b t b b t b t t b t b b t b t t t b b b t b b b b t b b b b b b t b t t)
+  (t t t t t t t t b b b b t b t t b b t b t t b t b b t b t t t b b b t t b b b t b b t b b b t b t t)
+  (t t t t t t t b b b b t b t t t b b t b t t b t b b t b t t t b b b t t b b b b b b t b b b t b t t)
+  (t t t t t t t b b b b t b t t t b b t t b t t t b b t b t t t b b b t b t b b b b b t b b b t b t t)
+  (t t t t t t b b b b t b t t t t b b t b b t b t b b t b t t t b b b t b t b b b b b t b b b t b t t)
+  (t t t t t t b b b b t b t t t t b b b b b t b t b b t b t t t b b b t b t b b b b b t b b b t b t t)
+  (t t t t t b b b b t b t t t t t b b t b b t b t b b t b t t t b b b t b t b b b b b b b b b t b t t)
+  (t t t t t b b b b t b t t t t t b b t t b t t t b b t b t t t b b b t b t b b b b b b b b b t b t t)
+  (t t t t b b b b t b t t t t t t b b t b t t b t b b t b t b t b b b t t b b b b b t t t b b b t b t)
+  (t t t t b b b b t b t t t t t t b b t b t t b t b b t b t b t b b b t t b b b b b t b t b b b t b t)
+  (t t t b b b b t b t t t t t t t b b t b t t b t b b t t b b t b b b t b b b b b b t b t b b b t b t)
+  (t t t b b b b t b t t t t t t t b b t t t b b t b b t t b b t b b b b b b b t b b t b t b b b t b t)
+  (t t b b b b t b t t t t t t t b b b b b b b b t b b b b b b b b b b b b b t b b b b t b b b b t b t)
+  (t t b b b b t b t t t t t t b b b b b b b b b b b b b b b b b b b b b b t b b b b b t b b b b b t b)
+  (t b b b b t t t t t t t t t b t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t)
+  (t b b b b b b b b b b b b b b t b t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t)
+  (b b b b b b b b b b b b b b t b t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t)
+;
+
+$size: 5px;
+
+.thelegendof {
+  @include simple($thelegendof, $size);
+  margin-top: 60px;
+}
+
+.zelda {
+  display: block;
+  @include simple($zelda, $size);
+  top: -40px;
+  margin-left: 230px;
+}

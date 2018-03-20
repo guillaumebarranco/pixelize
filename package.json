@@ -1,0 +1,25 @@
+{
+  "name": "pixelize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "npm run link & npm run triforce & npm run text",
+    "link": "node-sass examples/link/index.scss examples/link/dist/index.css",
+    "triforce": "node-sass examples/triforce/index.scss examples/triforce/dist/index.css",
+    "text": "node-sass examples/text/index.scss examples/text/dist/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guillaumebarranco/pixelize.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guillaumebarranco/pixelize/issues"
+  },
+  "homepage": "https://github.com/guillaumebarranco/pixelize#readme",
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

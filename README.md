@@ -1,1 +1,2 @@
 # pixelize
+	npm run sass

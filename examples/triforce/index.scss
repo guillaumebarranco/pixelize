@@ -1,0 +1,25 @@
+@import '../../pixelize';
+
+$triforce:
+  (t t t t t t t t b t t t t t t t t)
+  (t t t t t t t b y b t t t t t t t)
+  (t t t t t t t b y b t t t t t t t)
+  (t t t t t t b y y y b t t t t t t)
+  (t t t t t t b y y y b t t t t t t)
+  (t t t t t b y y y y y b t t t t t)
+  (t t t t t b y y y y y b t t t t t)
+  (t t t t b y y y y y y y b t t t t)
+  (t t t t b b b b b b b b b t t t t)
+  (t t t b y b t t t t t b y b t t t)
+  (t t t b y b t t t t t b y b t t t)
+  (t t b y y y b t t t b y y y b t t)
+  (t t b y y y b t t t b y y y b t t)
+  (t b y y y y y b t b y y y y y b t)
+  (t b y y y y y b t b y y y y y b t)
+  (b y y y y y y y b y y y y y y y b)
+  (b b b b b b b b b b b b b b b b b)
+;
+
+.triforce {
+  @include simple($triforce, 5px);
+}

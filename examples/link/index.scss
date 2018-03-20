@@ -1,0 +1,34 @@
+@import '../../pixelize';
+
+$link:
+  (t t t t t t t t b t t t t t t t t t)
+  (t t t t t t t b g b t t t t t t t t)
+  (t t t t t t t b g g b t t t t t t t)
+  (t t t t t t b g g g g b t t t t t t)
+  (t t t t t b g g g g g g b t t t t t)
+  (t t t t b g g g g g g g g b t t t t)
+  (t t t b g g g g g g g g g g b t t t)
+  (t t t b g g y y y y y y g g b t t t)
+  (t b b g b y y y y y y y y b g b b t)
+  (b q b b o y o y y y o b y y b b q b)
+  (b e e b y b y y y y b q b y b e e b)
+  (t b q b b o y y o b q e b o b q b t)
+  (t t b y b o o b b q e e q b y b t t)
+  (t t b y b b b b q e b b b b y b t t)
+  (t t b o b w a b e e b a w b o b t t)
+  (t t t b b e a w e e w a e b b t t t)
+  (t t t t b b e e e e e e b b t t t t)
+  (t t t b g b b q q q q b b g b t t t)
+  (t t b g g g g g g g g g g g g b t t)
+  (t b e e b b g g g g g g b b e e b t)
+  (t b q e g g b b y y b b g g e q b t)
+  (t t b b b g g g y y g g g b b b t t)
+  (t t t t b b g g g g g g b b t t t t)
+  (t t t b p b b b b b b b b p b t t t)
+  (t t t b p p b b t t b b p p b t t t)
+  (t t t t b b b t t t t b b b t t t t)
+;
+
+.link {
+  @include simple($link);
+}
